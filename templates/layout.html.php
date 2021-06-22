@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="jokes.css">
+    <link rel="stylesheet" href=<?= __DIR__ . "/../templates/jokes.css" ?>>
     <title><?= $title ?></title>
 </head>
 
