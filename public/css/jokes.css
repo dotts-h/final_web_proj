@@ -62,7 +62,11 @@ main {
   padding-top: 20px;
 }
 
+/**
+  * FOOTER
+*/
 footer {
+  background-color: #faf2e4;
   position: absolute;
   width: auto;
   bottom: 0;
