@@ -2,10 +2,9 @@
 <IfModule mod_rewrite.c>
   RewriteEngine On
 
-  RewriteCond %{THE_REQUEST} !\.(css|js|gif|jpeg|ico|tiff)\s [NC]
+  RewriteCond %{REQUEST_URI} !^/css/[^/]+\.css$
   RewriteCond %{REQUEST_FILENAME} !-f
   RewriteCond %{REQUEST_FILENAME} !-d
 
-  RewriteRule (*.css) /css/$1
   RewriteRule ^(.+)$ index.php [QSA,L]
 </IfModule>
