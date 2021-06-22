@@ -15,6 +15,10 @@
 <body>
     <header>
         <h1>MyJokes Forum</h1>
+        <?php
+        echo realpath('/');
+        echo realpath('');
+        ?>
     </header>
     <nav>
         <ul>
