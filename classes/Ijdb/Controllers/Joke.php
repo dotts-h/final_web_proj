@@ -79,11 +79,11 @@ class Joke
 
 	public function edit()
 	{
-		// $author = $this->authentication->getUser();
+		$author = $this->authentication->getUser();
 
-		// if (isset($_GET['id'])) {
-		// 	$joke = $this->jokesTable->findById($_GET['id']);
-		// }
+		if (isset($_GET['id'])) {
+			$joke = $this->jokesTable->findById($_GET['id']);
+		}
 
 		$title = 'Edit joke';
 
