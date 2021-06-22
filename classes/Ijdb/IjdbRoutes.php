@@ -103,6 +103,11 @@ class IjdbRoutes implements \Ninja\Routes
 					'controller' => $loginController,
 					'action' => 'logout'
 				]
+			],
+			'css/jokes.css' => [
+				'GET' => [
+					'controller' => '/css/jokes.css'
+				]
 			]
 		];
 
