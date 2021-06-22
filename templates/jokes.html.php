@@ -5,8 +5,8 @@
         <p>
             <?= htmlspecialchars($joke['joketext'], ENT_QUOTES, 'UTF-8') ?>
 
-            (by <a href="mailto:<?php
-                                echo htmlspecialchars($joke['email'], ENT_QUOTES, 'UTF-8'); ?>">
+            (by <a class="author" href="mailto:<?php
+                                                echo htmlspecialchars($joke['email'], ENT_QUOTES, 'UTF-8'); ?>">
                 <?php
                 echo htmlspecialchars($joke['name'], ENT_QUOTES, 'UTF-8'); ?>
             </a>)
@@ -18,7 +18,7 @@
             ?>
 
             <?php if ($userId == $joke['authorId']) : ?>
-                <a class="author" href="/joke/edit?id=<?= $joke['id'] ?>">Edit</a>
+                <a class="edit" href="/joke/edit?id=<?= $joke['id'] ?>">Edit</a>
 
         <form action="/joke/delete" method="post">
             <input type="hidden" name="id" value="<?= $joke['id'] ?>">
