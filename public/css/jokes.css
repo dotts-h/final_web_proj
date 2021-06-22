@@ -149,6 +149,7 @@ blockquote p {
 blockquote form {
   display: table-cell;
   width: 10%;
+  border: lightyellow 0.2rem;
 }
 .errors {
   padding: 1em;
@@ -161,6 +162,6 @@ blockquote form {
 .errors ul {
   margin-left: 1em;
 }
-#author {
+.author {
   font-variant: small-caps;
 }
