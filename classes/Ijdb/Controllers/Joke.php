@@ -43,10 +43,13 @@ class Joke
 
 		$totalJokes = $this->jokesTable->total();
 
+		$author = $this->authentication->getUser();
+
 		return [
 			'template' => 'jokes.html.php',
 			'title' => $title,
-			'variables' => [
+			'variables' =>
+			[
 				'totalJokes' => $totalJokes,
 				'jokes' => $jokes,
 				'userId' => $author['id'] ?? null
@@ -91,8 +94,8 @@ class Joke
 			'template' => 'editjoke.html.php',
 			'title' => $title,
 			'variables' => [
-				'joke' => $joke ?? null
-				// 'userId' => $author['id'] ?? null
+				'joke' => $joke ?? null,
+				'userId' => $author['id'] ?? null
 			]
 		];
 	}
