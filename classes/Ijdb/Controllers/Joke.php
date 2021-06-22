@@ -2,8 +2,8 @@
 
 namespace Ijdb\Controllers;
 
-use \Ninja\DatabaseTable;
-use \Ninja\Authentication;
+use \Framework\DatabaseTable;
+use \Framework\Authentication;
 
 class Joke
 {

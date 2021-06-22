@@ -1,6 +1,6 @@
 <?php
 
-namespace Ninja;
+namespace Framework;
 
 class Authentication
 {

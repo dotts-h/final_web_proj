@@ -2,7 +2,7 @@
 
 namespace Ijdb\Controllers;
 
-use \Ninja\DatabaseTable;
+use \Framework\DatabaseTable;
 
 class Register
 {

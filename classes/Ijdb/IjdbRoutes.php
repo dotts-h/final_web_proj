@@ -2,7 +2,7 @@
 
 namespace Ijdb;
 
-class IjdbRoutes implements \Ninja\Routes
+class IjdbRoutes implements \Framework\Routes
 {
 	private $authorsTable;
 	private $jokesTable;
@@ -12,19 +12,14 @@ class IjdbRoutes implements \Ninja\Routes
 	{
 		include __DIR__ . '/../../includes/DatabaseConnection.php';
 
-		$this->jokesTable = new \Ninja\DatabaseTable($pdo, 'joke', 'id');
-		$this->authorsTable = new \Ninja\DatabaseTable($pdo, 'author', 'id');
-		$this->authentication = new \Ninja\Authentication($this->authorsTable, 'email', 'password');
+		$this->jokesTable = new \Framework\DatabaseTable($pdo, 'joke', 'id');
+		$this->authorsTable = new \Framework\DatabaseTable($pdo, 'author', 'id');
+		$this->authentication = new \Framework\Authentication($this->authorsTable, 'email', 'password');
 	}
 
 
 	public function getRoutes(): array
 	{
-		// include __DIR__ . '/../../includes/DatabaseConnection.php';
-
-		// $jokesTable = new \Ninja\DatabaseTable($pdo, 'joke', 'id');
-		// $authorsTable = new \Ninja\DatabaseTable($pdo, 'author', 'id');
-
 		$jokeController = new \Ijdb\Controllers\Joke($this->jokesTable, $this->authorsTable, $this->authentication);
 		$authorController = new \Ijdb\Controllers\Register($this->authorsTable);
 		$loginController = new \Ijdb\Controllers\Login($this->authentication);
@@ -143,7 +138,7 @@ class IjdbRoutes implements \Ninja\Routes
 		// return $page;
 	}
 
-	public function getAuthentication(): \Ninja\Authentication
+	public function getAuthentication(): \Framework\Authentication
 	{
 		return $this->authentication;
 	}
