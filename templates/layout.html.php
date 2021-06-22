@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" href=<?= __DIR__ . '/app/templates/jokes.css' ?>>
+    <link rel="stylesheet" href=<?= __DIR__ . 'jokes.css' ?>>
     <title><?= $title ?></title>
 </head>
 
@@ -36,7 +36,7 @@
     </main>
 
     <footer>
-        &copy; IJDB 2021
+        &copy; Nuță Horia Cătălin [2021]
     </footer>
 </body>
 
