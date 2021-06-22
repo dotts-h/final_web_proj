@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="/php_ninja/jokes/templates/jokes.css">
+    <link rel="stylesheet" href="vendor/bin/heroku-php-apache2/jokes.css">
     <title><?= $title ?></title>
 </head>
 
