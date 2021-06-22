@@ -25,7 +25,7 @@
                 <a href="/joke/list">Jokes</a>
             </li>
             <li>
-                <a href="/joke/edit">Add a new joke</a>
+                <a href="/joke/edit">Submit New Joke</a>
             </li>
 
             <?php if ($loggedIn) : ?>

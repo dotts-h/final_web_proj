@@ -131,7 +131,7 @@ input[type="submit"] {
   font-size: 1em;
 }
 form {
-  overflow: auto;
+  /* overflow: auto; */
   clear: both;
   display: block;
   text-align: center;
