@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <base href="https://obscure-sands-40037.herokuapp.com/">
+    <!-- <base href="https://obscure-sands-40037.herokuapp.com/"> -->
     <meta charset="utf-8">
     <link rel="stylesheet" href="/css/jokes.css">
     <title><?= $title ?></title>
