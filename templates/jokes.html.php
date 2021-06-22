@@ -18,7 +18,7 @@
             ?>
 
             <?php if ($userId == $joke['authorId']) : ?>
-                <a href="/joke/edit?id=<?= $joke['id'] ?>">Edit</a>
+                <a class="author" href="/joke/edit?id=<?= $joke['id'] ?>">Edit</a>
 
         <form action="/joke/delete" method="post">
             <input type="hidden" name="id" value="<?= $joke['id'] ?>">

@@ -161,3 +161,6 @@ blockquote form {
 .errors ul {
   margin-left: 1em;
 }
+#author {
+  font-variant: small-caps;
+}
