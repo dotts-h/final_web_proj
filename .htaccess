@@ -1,1 +1,3 @@
-DocumentRoot "vendor/bin/heroku-php-apache2/public/"
+<IfModule dir_module>
+	DirectoryIndex index.html index.html.php
+</IfModule>
