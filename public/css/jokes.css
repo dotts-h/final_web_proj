@@ -62,7 +62,7 @@ nav li {
 */
 main {
   overflow: auto;
-  min-height: 30vh;
+  /* min-height: 30vh; */
   background-color: #f7f7f7;
   width: 100%;
   height: 100%;
@@ -88,6 +88,17 @@ footer {
   font-variant: small-caps;
 }
 
+/*
+ * GENERAL
+*/
+h2 {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  text-align: center;
+  color: rgb(250, 163, 49);
+  text-shadow: 0.05em 0.05em 0.1em slategray;
+  letter-spacing: 0.2rem;
+  margin-bottom: 3vh;
+}
 p {
   margin-bottom: 1em;
 }
