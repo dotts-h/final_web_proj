@@ -79,11 +79,11 @@ class Joke
 
 	public function edit()
 	{
-		$author = $this->authentication->getUser();
+		// $author = $this->authentication->getUser();
 
-		if (isset($_GET['id'])) {
-			$joke = $this->jokesTable->findById($_GET['id']);
-		}
+		// if (isset($_GET['id'])) {
+		// 	$joke = $this->jokesTable->findById($_GET['id']);
+		// }
 
 		$title = 'Edit joke';
 
@@ -91,8 +91,8 @@ class Joke
 			'template' => 'editjoke.html.php',
 			'title' => $title,
 			'variables' => [
-				'joke' => $joke ?? null,
-				'userId' => $author['id'] ?? null
+				'joke' => $joke ?? null
+				// 'userId' => $author['id'] ?? null
 			]
 		];
 	}
