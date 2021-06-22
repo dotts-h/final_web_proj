@@ -4,7 +4,7 @@
 <head>
     <!-- <base href="https://obscure-sands-40037.herokuapp.com/"> -->
     <meta charset="utf-8">
-    <link rel="stylesheet" href="/css/jokes.css">
+    <link rel="stylesheet" href="/app/css/jokes.css">
     <title><?= $title ?></title>
 </head>
 
