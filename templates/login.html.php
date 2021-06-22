@@ -5,10 +5,10 @@ endif;
 ?>
 
 <form method="post" action="">
-	<label for="email">Your email address</label>
+	<label for="email">Email</label>
 	<input type="text" id="email" name="email">
 
-	<label for="password">Your password</label>
+	<label for="password">Password</label>
 	<input type="password" name="password" id="password">
 
 	<input type="submit" name="login" value="Log in">
