@@ -9,7 +9,7 @@
 
 <body>
     <header>
-        <h1>Internet Joke Database</h1>
+        <h1>MyJoke Forum</h1>
     </header>
     <nav>
         <ul>
