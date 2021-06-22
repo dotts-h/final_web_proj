@@ -130,12 +130,64 @@ input[type="submit"] {
   clear: both;
   font-size: 1em;
 }
-form {
-  /* overflow: auto; */
+/* form {
+  /* overflow: auto; 
   clear: both;
   display: block;
   text-align: center;
+} 
+*/
+form {
+  text-align: center;
 }
+label {
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+input {
+  margin-bottom: 10px;
+}
+input {
+  background-color: goldenrod;
+  border: none;
+  box-shadow: 1px 1px;
+  color: rgb(255, 217, 47);
+  text-shadow: 0.05em 0.05em 0.1em grey;
+  font-family: monospace;
+  font-size: 1.5rem;
+  letter-spacing: 0.2rem;
+}
+input:hover {
+  color: tomato;
+}
+
+label {
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+input {
+  margin-bottom: 10px;
+}
+.form-br {
+  display: none;
+}
+@media screen and (max-width: 600px) {
+  .form-br {
+    display: block;
+  }
+}
+input {
+  background-color: goldenrod;
+  border: none;
+  box-shadow: 1px 1px;
+  color: rgb(255, 217, 47);
+  text-shadow: 0.05em 0.05em 0.1em grey;
+  font-family: monospace;
+  font-size: 1.5rem;
+  letter-spacing: 0.2rem;
+}
+input:hover {
+  color: tomato;
+}
+
 blockquote {
   display: table;
   margin-bottom: 1em;
