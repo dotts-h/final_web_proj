@@ -10,6 +10,9 @@
 <body>
     <header>
         <h1>Internet Joke Database</h1>
+        <?php
+        echo __DIR__;
+        ?>
     </header>
     <nav>
         <ul>
