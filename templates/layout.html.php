@@ -3,16 +3,13 @@
 
 <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="/css/jokes.css">
+    <link rel="stylesheet" href="/../../templates/jokes.css">
     <title><?= $title ?></title>
 </head>
 
 <body>
     <header>
         <h1>Internet Joke Database</h1>
-        <?php
-        echo __DIR__;
-        ?>
     </header>
     <nav>
         <ul>
