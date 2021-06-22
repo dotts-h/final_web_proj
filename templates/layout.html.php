@@ -3,13 +3,13 @@
 
 <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" href=<?= __DIR__ . 'jokes.css' ?>>
+    <link rel="stylesheet" href=<?= __DIR__ . '/jokes.css' ?>>
     <title><?= $title ?></title>
 </head>
 
 <body>
     <header>
-        <h1>MyJoke Forum</h1>
+        <h1>MyJokes Forum</h1>
     </header>
     <nav>
         <ul>
